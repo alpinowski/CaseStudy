@@ -1,0 +1,25 @@
+export default {
+    employeeList: 'Çalışan Listesi',
+    addNew: 'Yeni Ekle',
+    firstName: 'Ad',
+    lastName: 'Soyad',
+    email: 'E-posta',
+    phone: 'Telefon',
+    department: 'Departman',
+    position: 'Pozisyon',
+    dob: 'Doğum Tarihi',
+    doe: 'İşe Giriş Tarihi',
+    create: 'Çalışan Ekle',
+    update: 'Çalışanı Güncelle',
+    cancel: 'İptal',
+    confirmDelete: 'Bu çalışanı silmek istediğinizden emin misiniz?',
+    confirmUpdate: 'Bu çalışanı güncellemek istediğinizden emin misiniz?',
+    edit: 'Düzenle',   
+    delete: 'Sil',        
+    actions: 'İşlemler',
+    listview: 'Liste Gorünümü ',
+    tableview: 'Kare Gorünümü',
+    previous: 'Geri',
+    next: 'İleri'   
+  };
+  

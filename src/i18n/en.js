@@ -1,0 +1,25 @@
+export default {
+    employeeList: 'Employee List',
+    addNew: 'Add New',
+    firstName: 'First Name',
+    lastName: 'Last Name',
+    email: 'Email',
+    phone: 'Phone Number',
+    department: 'Department',
+    position: 'Position',
+    dob: 'Date of Birth',
+    doe: 'Date of Employment',
+    create: 'Create Employee',
+    update: 'Update Employee',
+    cancel: 'Cancel',
+    confirmDelete: 'Are you sure you want to delete this employee?',
+    confirmUpdate: 'Are you sure you want to update this employee?',
+    edit: 'Edit',   
+    delete: 'Delete',   
+    actions: 'Actions',
+    listview: 'List View',
+    tableview: 'Table View',
+    previous: 'Previous',
+    next: 'Next' 
+  };
+  

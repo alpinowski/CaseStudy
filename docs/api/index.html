@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;my-element&gt; ⌲ Docs</title>
+    <link rel="stylesheet" href="../docs.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto+Mono">
+    <link href="../prism-okaidia.css" rel="stylesheet" />
+    <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="/node_modules/lit/polyfill-support.js"></script>
+    <script type="module" src="../my-element.bundled.js"></script>
+
+    <style>
+      /* Basit responsive navbar ve tablo görünümü */
+      @media (max-width: 768px) {
+        header {
+          padding: 1rem;
+          text-align: center;
+        }
+
+        nav {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          padding: 1rem;
+          background-color: #f5f5f5;
+        }
+
+        #main-wrapper {
+          padding: 1rem;
+        }
+
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+          display: block;
+          width: 100%;
+        }
+
+        thead {
+          display: none;
+        }
+
+        tr {
+          margin-bottom: 1rem;
+          border: 1px solid #eee;
+          border-radius: 6px;
+          padding: 0.8rem;
+          background-color: white;
+        }
+
+        td {
+          display: flex;
+          justify-content: space-between;
+          padding: 6px 0;
+          border: none;
+        }
+
+        td::before {
+          content: attr(data-label);
+          font-weight: bold;
+          color: #555;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>&lt;my-element&gt;</h1>
+      <h2>A web component just for me.</h2>
+    </header>
+
+    <nav>
+      <a href="../">Home</a>
+      <a href="../examples/">Examples</a>
+      <a href="">API</a>
+      <a href="../install/">Install</a>
+    </nav>
+
+    <div id="main-wrapper">
+      <main>
+        <h1>API</h1>
+
+        <h2>&lt;my-element&gt;</h2>
+        <div>An example element.</div>
+
+        <h3>Attributes</h3>
+        <table>
+          <tr>
+            <th>Name</th><th>Description</th><th>Type</th><th>Default</th>
+          </tr>
+          <tr>
+            <td data-label="Name">name</td>
+            <td data-label="Description">The name to say "Hello" to.</td>
+            <td data-label="Type">string</td>
+            <td data-label="Default"></td>
+          </tr>
+          <tr>
+            <td data-label="Name">count</td>
+            <td data-label="Description">The number of times the button has been clicked.</td>
+            <td data-label="Type">number</td>
+            <td data-label="Default"></td>
+          </tr>
+        </table>
+
+        <h3>Properties</h3>
+        <table>
+          <tr>
+            <th>Name</th><th>Attribute</th><th>Description</th><th>Type</th><th>Default</th>
+          </tr>
+          <tr>
+            <td data-label="Name">name</td>
+            <td data-label="Attribute">name</td>
+            <td data-label="Description">The name to say "Hello" to.</td>
+            <td data-label="Type">string</td>
+            <td data-label="Default">'World'</td>
+          </tr>
+          <tr>
+            <td data-label="Name">count</td>
+            <td data-label="Attribute">count</td>
+            <td data-label="Description">The number of times the button has been clicked.</td>
+            <td data-label="Type">number</td>
+            <td data-label="Default">0</td>
+          </tr>
+        </table>
+
+        <!-- Diğer bölümler aynı şekilde devam ediyor -->
+      </main>
+    </div>
+
+    <footer>
+      <p>
+        Made with
+        <a href="https://github.com/lit/lit-element-starter-js">lit-starter-js</a>
+      </p>
+    </footer>
+  </body>
+</html>
